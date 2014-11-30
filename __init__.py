@@ -103,7 +103,7 @@ class Test(QtGui.QWidget, Ui_Form):
         #self.logPlainTextEdit.setPlainText(data)
     def startClicked(self):
         self.control.start_()
-        self.addLog(u"动态刷新开始...\n")
+        self.addLog(u"动态刷新开始...一旦有新动态将会进行操作，您可以最小化软件忙别的了~\n")
 #        self.control.start()
 
     def stopClicked(self):

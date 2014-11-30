@@ -149,6 +149,7 @@ outputhtmlfeed=1&rd=0.04290125542320311&getob=1&g_tk=" + self.gtk
                 self.logSignal.emit(u"%s(%s)有新动态，%s\n"%(nickName, authorUin, strTime))
                 self.existFeeds.append(authorUin+fid)
 
+#        self.logSignal.emit(u"一轮动态刷新完毕，%s\n"%time.ctime())
         self.workFinished = True
         """
         if self.running:
