@@ -113,7 +113,8 @@ outputhtmlfeed=1&rd=0.04290125542320311&getob=1&g_tk=" + self.gtk
         try:
             print data,time.ctime()
         except:
-            self.log(data+"\n%s"%time.ctime())
+            print repr(data),time.ctime()
+#            self.log(data+"\n%s"%time.ctime())
         #index = data.find("{")
         data = data[len(u"_Callback("):-2]
         self.webFrame.evaluateJavaScript("python.getJson(JSON.stringify(%s))"%data)

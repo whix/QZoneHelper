@@ -103,10 +103,13 @@ class Test(QtGui.QWidget, Ui_Form):
         #self.logPlainTextEdit.setPlainText(data)
     def startClicked(self):
         self.control.start_()
+        self.addLog(u"动态刷新开始...\n")
 #        self.control.start()
 
     def stopClicked(self):
         self.control.stop()
+        self.addLog(u"软件已停止！\n")
+#        self.control.start()
 
     def getInfo(self, reply):
 
