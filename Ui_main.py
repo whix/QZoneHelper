@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'D:\Documents\Program\PythonApplication\QtApplication\QZoneHelper\main.ui'
+# Form implementation generated from reading ui file 'main.ui'
 #
-# Created: Sun Nov 30 02:09:56 2014
+# Created: Sun Feb 01 01:41:18 2015
 #      by: PyQt4 UI code generator 4.10.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -123,13 +123,3 @@ class Ui_Form(object):
 
 from PyQt4 import QtWebKit
 import main_rc
-
-if __name__ == "__main__":
-    import sys
-    app = QtGui.QApplication(sys.argv)
-    Form = QtGui.QWidget()
-    ui = Ui_Form()
-    ui.setupUi(Form)
-    Form.show()
-    sys.exit(app.exec_())
-
