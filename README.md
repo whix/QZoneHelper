@@ -18,3 +18,5 @@ V1.1更新：
 
 
 源码地址：https://github.com/linyuchen/QZoneHelper
+
+打包好的exe下载地址：http://pan.baidu.com/s/1hqiV3bI 密码：iodp
