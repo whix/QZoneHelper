@@ -55,7 +55,7 @@ class Main(QtGui.QWidget, Ui_Form):
         login_btn.onclick = getQQPwd;
 
         """
-        self.version = 1.1
+        self.version = 1.2
         self.lyc = "http://0yuchen.com"
         super(Main, self).__init__()
         self.setupUi(self)
@@ -125,6 +125,7 @@ class Main(QtGui.QWidget, Ui_Form):
     def readyOk(self):
         
         self.qq = self.pythonjs.qq
+        self.uin = self.qq
         self.__config["lastQQ"] = self.qq
         self.__config.write()
         self.webView.hide()
@@ -263,14 +264,17 @@ class Main(QtGui.QWidget, Ui_Form):
     def getInfo(self, reply):
 
         #print reply.url().toString()
+        """
         header = reply.request().rawHeader("X-Real-Url")
         header = str(header)
+        print header
 
         if header == "":
             return
         uin = re.findall("uin=(\d+)", header)
         if uin:
             self.uin = uin[0]
+        """
         manager = reply.manager()
         for cookie in manager.cookieJar().allCookies():
             if str(cookie.name()) == "skey":
